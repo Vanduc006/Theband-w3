@@ -1,0 +1,39 @@
+THỰC HÀNH
+Thực hành số1:
+https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+
+
+1. Phân tích-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+   1. Header-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+   2. Slider-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+   3. Conten-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+      1. Abo-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+      2. Tou-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+      3. Con-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+      4. Ima-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+      5. Foo-> đã xong, hãy tiếp tục với    2.XÂY MÓNG
+    4. Footer-> đã xong,hãy tiếp tục với    2.XÂY MÓNG
+
+
+
+x
+2. Dựng bose(xây mỏng)  
+3. Xây dựng từng phần theo phân tích
+4. Hoàn thiện
+
+
+
+
+
+
+
+Những thành phần thường gặp trên giao diện website:
+ 1. Heoder(Đầu trong) -> xoong
+2. Navigation(Điều Hướng hưồng)
+3. Breadcrumb
+4. Sidebar
+5. Slider
+6. Bonner
+ 7. Content(Nội dung chính)
+8. Fontnr(Chân trang)
+                   I

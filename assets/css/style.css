@@ -1,0 +1,546 @@
+/*reset css*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+/*
+1.Vị trí
+2.Kích thước
+3.Màu sắc
+4.Font
+*/
+
+/*dùng lại nhiều*/
+.clear {
+  clear: both;
+}
+
+.text-white {
+  color: #fff !important;
+}
+.color000-op06 {
+  opacity: 0.9;
+  color: rgb(0, 0, 0) !important;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-third {
+  width: 33.33333%;
+}
+.col-half {
+  width: 50%;
+}
+.col-full {
+  width: 100%;
+}
+.text-center {
+  text-align: center !important;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+.btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  display: inline-block;
+  border: none;
+}
+/*end*/
+
+#main {
+  
+}
+#header {
+  background-color: rgb(0, 0, 0);
+  height:47px ;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+
+}
+
+#header #search-btn {
+  float: right;
+  padding: 0 21px;
+  cursor:pointer;
+}
+#header .search-icon {
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 47px;
+  
+
+  
+  text-transform: uppercase;
+}
+#header #search-btn:hover{
+  background-color: red;
+}
+#nav {
+  display: inline-block;
+  
+  
+}  
+#nav li {
+  display: inline-block;
+  position: relative;
+  
+  
+  
+}
+#nav li:hover .subnav {
+  display: block;
+
+}
+
+#nav >li:hover > a,
+#nav .subnav li:hover  {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+#nav li a {
+  
+  text-decoration: none;
+  
+  font-size: 15px;
+  line-height: 47px;
+  padding: 0 24px;
+  font-family: sans-serif;
+  display: inline-block;
+} 
+#nav > li > a {
+  color: #fff;
+  
+} 
+
+
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  top:100%;
+  left:0;
+
+} 
+
+#nav .subnav a {
+  color: #000;
+  
+  padding: 0 12px;
+  line-height: 38px;
+  
+  
+}
+#nav .subnav li {
+  display: block;
+  width: 100%;
+}
+#nav .nav-angle-down {
+  font-size: 14px;
+}
+
+
+#slider {
+  padding-top: 50%;
+  background:url(/assets/img/chicago.jpg) 
+  top center / cover no-repeat;
+  position: relative;
+  
+}
+#slider .text-content {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom:47px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#slider .text-heading{
+  font-weight: 700;
+  font-size: 24px;
+  
+
+
+}
+#slider .text-description{
+  font-size: 15px;
+  margin-top: 25px;
+}
+#content {
+
+}
+#content .content-section {
+  width: 800px;
+  margin: 0 auto;
+  padding: 64px 16px;
+  font-family: "Segoe UI",Arial,sans-serif;
+
+  
+}
+
+
+#content .section-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500000px;
+  letter-spacing: 4px;
+
+}
+#content .section-sub-heading {
+  text-align: center;
+  font-size: 15px;
+  font-family:  sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+  opacity: 0.5;
+  
+}
+#content .about-text {
+  text-align: center;
+  font-size: 15px;
+  font-family:  sans-serif;
+  text-align: justify;
+  line-height: 1.4;
+
+}
+
+#content .members-list {
+  margin-top: 48px;
+  
+
+}
+#content .member-name{
+  font-size: 15px;
+
+}
+#content .member-img {
+  width: 154px;
+  margin-top: 15px;
+  border-radius: 4px;
+  
+}
+#content .tour-section {
+  margin-top: 242px;
+  background-color: #000000;
+ 
+}
+.tickets-list {
+  margin-top: 43px;
+  background-color: #fff;
+  list-style-type: none;
+}
+.tickets-list li {
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+
+}
+.tickets-list .sold-out {
+  background-color: #F44336;
+  font-size: 15px;
+  color: #fff;
+  padding: 3px 9px;
+  margin-left: 16px;
+}
+.tickets-list .sold-out:hover {
+  content: "Sold Out";
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 8px;
+  cursor:pointer;
+}
+.tickets-list .quantity   {
+  float: right;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -2px;
+  cursor:pointer;
+}
+.tickets-list .quantity:hover {
+  background-color: #ccc;
+  color: #000000;
+  font-weight: 600;
+}
+.places-list{
+  margin-top: 32px;
+  padding-bottom: 48px;
+
+}
+.place-img{
+  width: 100%;
+  display: block;
+}
+.place-img:hover{
+  opacity: 0.6;
+}
+.place-body{
+  background-color: #fff;
+  padding: 16px 16px 0 16px;
+  font: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.place-heading{
+  font-size: 15px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.place-time{
+  margin: 15px 0;
+  opacity: 0.6;
+
+}
+.place-desc{
+  margin: 15px 0;
+  line-height: 1.4;
+}
+.place-buy-btn{
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  padding: 11px 12px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+} 
+.place-buy-btn:hover{
+  background-color: #ccc;
+  color: #000;
+  
+}
+.contact-content {
+  margin-top: 48px;
+  font-size: 18px;
+}
+.contact-info {
+  line-height: 1.6;
+  font-size: 18px;
+}  
+.contact-info i {
+    opacity: 0.6;
+}
+.contact-info i:hover {
+    opacity: 1;
+}
+.contact-info i[class*="fa-"] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-info a{
+    text-decoration: none;
+    color: #000;
+}
+.contact-form {
+  font-size: 15px;
+}
+.contact-form .form-control {
+ padding: 10px;
+ border: #ccc 1px solid;
+ width: 100%;
+}
+.line1 {
+  margin-bottom: 15px;
+}
+.contact-form input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 12px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  margin-left: 84.5%;
+  margin-top: 16px;
+
+  
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+#fotter {
+
+}
+
+.modal {
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.open{
+  display: flex;
+}
+
+.modal-contanier {
+  background-color: #fff;
+  width: 900px;
+  min-height: 200px;
+  position: relative;
+  max-width: calc(100% - 40px);
+  animation: modalFadeIn ease 2s;
+}
+.modal-header {
+  background-color: #009688;
+  color: #fff;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.modal-heading-icon a {
+  margin-right: 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.ti-close {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.ti-close:hover {
+  color: #000;
+  background-color: #ccc;
+  opacity: 1;
+
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-label {
+  display: block;
+  font-size: 15px;
+  font-family: sans-serif;
+  bottom: 12px;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+#buy-tickets {
+  background-color: #009688;
+  border: none;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 18px;
+  cursor: pointer;
+}
+#buy-tickets:hover {
+  opacity: 0.9;
+}
+.modal-footer {
+  padding: 16px;
+  text-align: right;
+  font-family: sans-serif;
+  
+}
+.modal-footer a {
+  color: #2196F3;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*Map secton*/
+.map-section img{
+  width: 100%;
+}
+
+/*Footer section*/
+#fotter {
+  padding: 64px 16px;
+  text-align: center;
+  font-size: 20px;
+}
+.social a:hover {
+  opacity: 0.6;
+}
+.copy-right {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: sans-serif;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+
+
+
+
+
+
