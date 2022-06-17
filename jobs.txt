@@ -36,4 +36,7 @@ Những thành phần thường gặp trên giao diện website:
 6. Bonner
  7. Content(Nội dung chính)
 8. Fontnr(Chân trang)
-                   I
+                   
+
+
+responsive đê đồ lười                   
