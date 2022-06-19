@@ -9,6 +9,7 @@
     <!--ANH sẽ hiển thi khi gửi link qua facebook-->
     <meta property="og:imgage" content="https://www.w3theband.ga/assets/img/map.jpg">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="icon" href="/assets/img/icon.ico">
     <link rel="stylesheet" href="/assets/font/themify-icons-font/themify-icons/themify-icons.css">
       
@@ -22,7 +23,7 @@
         <div id="header" >
             <!--Bắt đầu Nav-->
             <ul id="nav">
-                <li><a href="#slider">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -50,10 +51,15 @@
             <div id="search-btn">
                 
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
-            <!--Xong nút tìm kiếm nà:3-->    
+            </div>
+
+            <div id="mobile-menu-btn">
+                <i class="menu-icon fa-solid fa-bars"></i> 
+            </div>
+                <!--Xong nút tìm kiếm nà:3-->    
         </div>
 
-        <!--Bắt đầu Search-->
+        
         <div id="slider">
             <div class="text-content">
                 <h2 class="text-heading">Chicago</h2>
@@ -186,7 +192,7 @@
                                       <input name="" id=""  class="form-control" placeholder="Message"></input>
                                  </div>
                            </div> 
-                           <input class="js-tks-for-submit" type="submit" value="SEND">
+                           <div class="tksForSubmit">Submit</div>
                         </form>
                     </div>
                 </div>
@@ -261,8 +267,24 @@
         const modal = document.querySelector('.modal')
         const modalContanier = document.querySelector('.js-modal-contanier')
         const modalClose = document.querySelector('.js-modal-close')
-
-        
+        const clickSubmit = document.querySelector('.tksForSubmit')
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('mobile-menu-btn')
+        var headerHeight = header.clientHeight;
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+        function alertTks () {
+            clickSubmit.addEventListener('click', function () {
+                alert('Thank you for your submission')
+            })
+        }    
         //Hàm hiển thị modal mua vé//
         function showBuyTickets() {
             modal.classList.add('open')
@@ -284,7 +306,8 @@
         function copyEmail() {
             navigator.clipboard.writeText('bagiadaohoa@gmail.com')
             alert('Đã sao chép email');
-        }    
+        }   
+
 
 
 
