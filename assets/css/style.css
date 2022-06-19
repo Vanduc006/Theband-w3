@@ -70,16 +70,10 @@ html {
 #main {
 
 }
-audio {
-  position: absolute;
-  bottom: 0;
-  
-  width: 7%;
-  background-color: #000;
-  z-index: 9999;
-}
+
+
 .body {
-  cursor: url(/assets/img/music.ani), auto;
+  
 }
 
 #header {
@@ -89,8 +83,9 @@ audio {
   top: 0;
   right: 0;
   left: 0;
+  position: fixed;
+  overflow: hidden;
   
-
 }
 
 #header #search-btn {
@@ -98,14 +93,25 @@ audio {
   padding: 0 21px;
   cursor:pointer;
 }
+#header #mobile-menu-btn {
+  float: right;
+  padding: 0 21px;
+  cursor:pointer;
+  display: none;
+}
+#header .menu-icon,
 #header .search-icon {
   color:rgb(255, 255, 255);
   font-size: 20px;
   line-height: 47px;
-  
-
-  
   text-transform: uppercase;
+}
+
+#header #mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+#header .menu-icon:hover {
+  color: #000;
 }
 #header #search-btn:hover{
   background-color: red;
@@ -157,7 +163,7 @@ audio {
   min-width: 160px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   top:100%;
-  left:0;
+  
 
 } 
 
@@ -182,6 +188,7 @@ audio {
   background:url(/assets/img/chicago.jpg) 
   top center / cover no-repeat;
   position: relative;
+  
   
 }
 #slider .text-content {
@@ -208,14 +215,11 @@ audio {
 }
 #content .content-section {
   width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 64px 16px;
   font-family: "Segoe UI",Arial,sans-serif;
-
-  
 }
-
-
 #content .section-heading {
   text-align: center;
   font-size: 30px;
@@ -389,7 +393,7 @@ audio {
 .line1 {
   margin-bottom: 15px;
 }
-.contact-form input[type="submit"] {
+.contact-form .tksForSubmit {
   background-color: #000;
   color: #fff;
   text-decoration: none;
@@ -397,15 +401,17 @@ audio {
   display: inline-block;
   border: none;
   cursor: pointer;
-  margin-left: 84.5%;
+  margin-left: 81%;
   margin-top: 16px;
+  
 
   
 }
-.contact-form input[type="submit"]:hover {
+.contact-form .tksForSubmit:hover {
   background-color: #ccc;
   color: #000;
 }
+
 
 
 #fotter {
@@ -560,23 +566,6 @@ audio {
   }
 
 }
-
-/*PC*/
-@media (min-width: 1024px) {
-
-}
-/*Tablet*/
-@media (min-width: 740px) and (max-width: 1023px) {
-
-
-}
-/*Mobile*/
-@media (max-width: 740px) {
-  #main {
-    display: none;
-  }
-}
-
 
 
 /*
