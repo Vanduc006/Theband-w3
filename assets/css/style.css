@@ -57,6 +57,9 @@
 .mt-16 {
   margin-top: 16px !important;
 }
+.mt-32 {
+  margin-top: 32px !important;
+}
 .btn {
   color: #fff;
   background-color: #000;
@@ -325,6 +328,23 @@ html {
   border-radius: 4px;
   
 }
+#content .more {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 15px;
+  margin-top: 32px;
+  text-decoration: none ;
+}
+#content a:hover {
+  background-color: #605B56;
+  color: #F2FBE0;
+}
+#content .more-mem {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
 #content .tour-section {
   
   background-color: #000000;
@@ -391,7 +411,7 @@ html {
   font-weight: 600;
 }
 .places-list{
-  margin-top: 16px;
+  
 }
 .place-img{
   width: 100%;
