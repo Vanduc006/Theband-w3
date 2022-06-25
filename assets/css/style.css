@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 
 }
 
@@ -39,6 +40,7 @@
   padding-left: 8px;
   padding-right: 8px;
 }
+
 .col-third {
   width: 33.33333%;
 }
@@ -68,6 +70,9 @@
   margin-top: 15px;
   display: inline-block;
   border: none;
+}
+.mb-15 {
+  margin-bottom: 15px;
 }
 /*end*/
 html {
@@ -366,10 +371,9 @@ html {
   border: none;
   color: #fff;  
   padding: 8px;
-  display: flex;
-  align-items: flex-end;
   margin-top: 16px;
   float: right;
+  
 }
 #content .send:hover {
   background-color: #ccc;
@@ -497,9 +501,7 @@ html {
  border: #ccc 1px solid;
  width: 100%;
 }
-.line1 {
-  margin-bottom: 15px;
-}
+
 .contact-form .tksForSubmit {
   background-color: #000;
   color: #fff;
