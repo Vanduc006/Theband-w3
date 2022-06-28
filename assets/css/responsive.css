@@ -56,9 +56,18 @@
 
 
 }
+/*Tablet and Mobile*/ 
+@media (max-width: 1023px) {
+    .place-buy-btn {
+        padding: 15px 16px;
+    }
+    
+}
 /*Tablet*/
 @media (min-width: 740px ) and (max-width: 1023px) {
-
+    .cursor {
+        display: none;
+    }
 }
 
 
