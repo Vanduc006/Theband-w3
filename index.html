@@ -42,7 +42,7 @@
                             <li><a href="#">Đíu-ai-biết</a></li>
                             <li><a href="#">Mẹc xe đẹc</a></li>
                             <li><a href="#">Lam bo ghi ni</a></li>
-                            <li><a href="#">Nhạc của em</a></li>
+                            <li><a href="music_player.html">Nhạc của em</a></li>
                             <li><a href="#">Gu sì</a></li>
                         
                         </ul>
@@ -50,6 +50,7 @@
                 </li>
 
             </ul>
+            
             <!--Kết thúc Nav-->
             <!--Nút tìm kiếm-->
             <div id="search-btn">
@@ -106,9 +107,12 @@
                                 MORE
                             </a>
                             <div class="audio">
-                                <audio id="audio" controls loop 
-                                src="/assets/audio/rammor summer set.mp3">
-                                <audio>
+
+                                <audio preload="" autoplay="" loop="">
+                                    <source src="assets/audio/sound.webm" type="audio/wav">
+                                    </audio>
+                                
+                                
                             </div>
                         </div>
                 </div>    
@@ -278,6 +282,8 @@
     
 
     </div> 
+
+
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.modal')

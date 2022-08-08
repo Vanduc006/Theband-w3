@@ -6,6 +6,8 @@
   font-family: sans-serif;
 
 }
+html,body{cursor:url("/assets/img/mouse-f1.png"), auto;}
+.hover-cus-mouse:hover{cursor:url("/assets/img/mouse-f2.png"), auto;}
 
 /*
 1.Vị trí
@@ -77,6 +79,7 @@
 /*end*/
 html {
   scroll-behavior: smooth;
+  
 }
 .cursor {
   width: 20px;
@@ -371,16 +374,14 @@ html {
   justify-content: center;
   cursor: pointer;
 }
-.audio {
+audio {
   position: absolute;
   left: 0;
+  width: 35%;
   margin-top: 15px;
   margin-left: 10px;
 }
-.audio audio {
-  width: 30vw;
-  display: block; 
-}
+
 #content .tour-section {
   
   background-color: #000000;
@@ -679,6 +680,7 @@ html {
   justify-content: center;
   padding: 3px;
   border: none;
+  cursor: pointer;
 }
 
 .copy:active {
