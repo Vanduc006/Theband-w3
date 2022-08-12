@@ -53,7 +53,7 @@
             
             <!--Kết thúc Nav-->
             <!--Nút tìm kiếm-->
-            <div id="search-btn">
+            <div id="search-btn" class="hover-cus-mouse"> 
                 
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
             </div>
@@ -106,14 +106,19 @@
                             <a class="more" href="#">
                                 MORE
                             </a>
-                            <div class="audio">
+                            <p id="demo"></p>
+                            
 
-                                <audio preload="" autoplay="" loop="">
+                                <audio id="audio">
                                     <source src="assets/audio/sound.webm" type="audio/wav">
+                                    Your browser does not support the audio element.
                                     </audio>
-                                
-                                
-                            </div>
+                                <!--Auto play audio when get in web-->  
+                                    <script>
+                                        var audio = document.getElementById("audio");
+                                        audio.play();
+                                    </script>      
+                            
                         </div>
                 </div>    
             
@@ -319,6 +324,12 @@
         }
         
 
+        //phát nhạc khi ấn
+        var audio = document.getElementById('audio');
+        function playAudio() {
+            audio.autoplay = true;
+            audio.load();
+        }
 
 
         // Thông báo khi gửi thư thành công

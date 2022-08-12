@@ -7,7 +7,7 @@
 
 }
 html,body{cursor:url("/assets/img/mouse-f1.png"), auto;}
-.hover-cus-mouse:hover{cursor:url("/assets/img/mouse-f2.png"), auto;}
+.hover-cus-mouse,a:hover{cursor:url("/assets/img/mouse-f2.png"), auto;}
 
 /*
 1.Vị trí
@@ -159,9 +159,7 @@ html {
   top: 0;
   right: 0;
   left: 0;
-  position: fixed;
-  
-  
+  position: fixed; 
 }
 
 #header #search-btn {
@@ -683,9 +681,7 @@ audio {
   cursor: pointer;
 }
 
-.copy:active {
-  background-color: #757575;
-}
+
 
 @keyframes modalFadeIn {
   from {
@@ -698,6 +694,9 @@ audio {
   }
 
 }
+
+
+
 
 
 /*
