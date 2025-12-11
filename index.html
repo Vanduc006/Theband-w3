@@ -1,395 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TheBand</title>
-    <script src="https://kit.fontawesome.com/493cf92c43.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=link, initial-scale=1.0">
-    <!--ANH sẽ hiển thi khi gửi link qua facebook-->
-    <meta property="og:imgage" content="https://www.w3theband.ga/assets/img/map.jpg">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
-    <link rel="icon" href="/assets/img/icon.ico">
-    <link rel="stylesheet" href="/assets/font/themify-icons-font/themify-icons/themify-icons.css">
-      
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 </head>
-
 <body>
 
-       
-    <div id="main">
-        
-        <div class="cursor">
-
-        </div> 
-
-        <div id="header" >
-            <!--Bắt đầu Nav-->
-            <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#band">Band</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-                <li>
-                    <a href="#" >
-                        More
-                        <i class="nav-angle-down fa-solid fa-angles-down"></i>
-                    </a>
-                    <!---Bắt đầu Dropdown hay là Subnav đó-->
-                        <ul class="subnav">
-                            <li><a href="#">Đíu-ai-biết</a></li>
-                            <li><a href="#">Mẹc xe đẹc</a></li>
-                            <li><a href="#">Lam bo ghi ni</a></li>
-                            <li><a href="music_player.html">Nhạc của em</a></li>
-                            <li><a href="#">Gu sì</a></li>
-                        
-                        </ul>
-                    <!---Kết thúc Dropdown hay là Subnav đó--> 
-                </li>
-
-            </ul>
-            
-            <!--Kết thúc Nav-->
-            <!--Nút tìm kiếm-->
-            <div id="search-btn" class="hover-cus-mouse"> 
-                
-                <i class="search-icon fa-solid fa-magnifying-glass"></i>
-            </div>
-
-            <div id="mobile-menu-btn">
-                <i class="menu-icon fa-solid fa-bars"></i> 
-            </div>
-                <!--Xong nút tìm kiếm nà:3-->    
-        </div>
-
-        
-        <div id="slider">
-            <div class="text-content">
-                <h2 class="text-heading">Los Angeles</h2>
-                <div class="text-description">
-                    
-                    Thank you, LA - A night we won't forget.</div>
-            </div>
-        </div>
-        <!---Kết thúc Slider-->
- 
-
-        <!--Bắt đầu Content-->
-        <div id="content">
-            
-            <!---The Band-->
-                <div id="band"class="content-section">
-                    <h2 class="section-heading">Not Band</h2>
-                    <p class="section-sub-heading">We love music</p>
-                    <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div class="row members-list">
-                            <!--Mem 1-->
-                            <div class="width100 col col-third text-center mt-32">
-                                <p class="member-name">Kygo</p>
-                                <img src="/assets/img/kygo.png" alt="kygo" class="member-img">
-                            </div>
-                            <!--Mem 2-->
-                            <div class="width100 col col-third text-center mt-32">
-                                <p class="member-name">Rammor</p>
-                                <img src="/assets/img/Rammor.jpg" alt="rammor" class="member-img" >
-                            </div>
-                            <!--Mem 3-->
-                            <div class="width100 col col-third text-center mt-32">
-                                <p class="member-name">Avicii</p>
-                                <img src="/assets/img/avicii.png" alt="avicii" class="member-img">
-                            </div>
-
-                        </div>
-                        <div class="more-mem" >
-                            <a class="more" href="#">
-                                MORE
-                            </a>
-                            <p id="demo"></p>
-                            
-
-                                <audio id="audio">
-                                    <source src="assets/audio/sound.webm" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                    </audio>
-                                <!--Auto play audio when get in web-->  
-                                    <script>
-                                        var audio = document.getElementById("audio");
-                                        audio.play();
-                                    </script>      
-                            
-                        </div>
-                </div>    
-            
-            <!---End The Band-->
-
-            <!--Tour-->
-            <div id="tour" class="tour-section">
-                <div class="content-section">
-                    <h2 class="section-heading text-white" >TOUR DATES</h2>
-                    <p class="section-sub-heading text-white">Remember to book your ticket!</p>
-                        <!--Tickets-->
-                        <ul class="tickets-list ">
-                            <li>September <span class="sold-out">Sold out</span></li>
-                            <li>October <span class="sold-out">Sold out</span></li>
-                            <li>November <span class="quantity">3</span></li>
-                        </ul>
-                        <!--End Tickets-->
-
-                        <!--Place-->
-                        <div class="row places-list">
-                            <div class="mt-16 col col-third width100">
-                                <img src="/assets/img/newyork.jpg" alt="New York" class="place-img">
-                                <div class="place-body">
-                                    <h3 class="place-heading">New York</h3>
-                                    <p class="place-time">Fri 27 Nov 2016</p>
-                                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button  class="place-buy-btn js-buy-ticket width100">Buy Tickets</button>
-                                </div>
-                            </div>
-
-                            <div class="mt-16 col col-third width100">
-                                <img src="/assets/img/paris.jpg" alt="Paris" class="place-img">
-                                <div class="place-body">
-                                    <h3 class="place-heading">Paris</h3>
-                                    <p class="place-time">Sat 28 Nov 2016</p>
-                                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button  class="place-buy-btn js-buy-ticket width100">Buy Tickets</button>
-                                </div>
-                            </div>
-
-                            <div class="mt-16 col col-third  width100">
-                                <img src="/assets/img/sanfran.jpg" alt="San Francisco" class="place-img">
-                                <div class="place-body">
-                                    <h3 class="place-heading">San Francisco</h3>
-                                    <p class="place-time">Sun 29 Nov 2016</p>
-                                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button  class="place-buy-btn js-buy-ticket width100">Buy Tickets</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                            
-                </div>    
-        </div>
-               
-            <!--End Tour--> 
-            
-            <!--Contact-->
-            <div id="contact" class="content-section">
-                <h2 class="section-heading">CONTACT</h2>
-                <p class="section-sub-heading">Fan à? Gửi cái thư xem nào!</p>
-                <div class="row contact-content">
-                    <div class="col col-half contact-info width100">
-                        <p>
-                            <a class="locate-text" href="https://www.google.com/maps/d/embed?mid=1Il24RrLJjdHtiBO83tYIVtOdawE&ie=UTF8&hl=en&t=k&msa=0&ll=41.88726300000001%2C-87.62935600000002&spn=0.011182%2C0.018239&z=15&output=embed">
-                                <i class="fa-solid fa-earth-americas"></i>
-                                Chincago ,US
-                            </a>
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i>
-                            <a href="tel:+84373871213">Phone: +84373871213</a>
-                            <button class="copy"onclick="copySDT()">COPY</button>
-                        </p>
-                        <p class="mb-15">
-                            <i class="fa-solid fa-at"></i>
-                            <a href="mailto:bagiadaohoa@gmail.com">
-                            Email: bagiadaohoa@gmail.com</a>
-                            <button class="copy"onclick="copyEmail()">COPY</button>
-                        </p>
-                    </div>
-                    
-                    <div class="col col-half contact-form width100">
-                        <form action="">
-                           <div class="row ">
-                               <div class="col col-half mb-15 width100">
-                                   <input type="text" class="form-control" required placeholder="Name">
-                               </div>
-                               <div class="col col-half mb-15 width100">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                           </div>
-                           <div class="row">
-                                 <div class="col col-full">
-                                      <input name="" id=""  class="form-control" placeholder="Message"></input>
-                                 </div>
-                           </div> 
-                           <input class="send width100" type="button" value="SEND">
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!--End Contact-->
-
-            
-        <!--Kết thúc Content-->
-            <div class="map-section">
-                <img src="/assets/img/map.jpg" alt="Map" class="map-img">
-            </div>
-        <div id="fotter">
-            <div class="social color000-op06">
-                <a href="https://www.facebook.com/profile.php?id=100065525475828"><i class="fa-brands fa-facebook color000-op06"></i></a>
-                <a href="https://www.instagram.com/v_duc.join.pfl/"><i class="fa-brands fa-instagram color000-op06"></i></a>
-                <a href="#"><i class="fa-brands fa-snapchat color000-op06"></i></a>
-                <a href="#"><i class="fa-brands fa-pinterest color000-op06"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter color000-op06"></i></a>
-                <a href="https://www.youtube.com/channel/UC-1L-3NPTQKyA-0Nk9MJMgQ"><i class="fa-brands fa-youtube color000-op06"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin color000-op06"></i></a>
-                <a href="https://github.com/Vanduc006"><i class="fa-brands fa-github color000-op06"></i></a>
-            </div>
-            <p class="copy-right color000-op06">Powered by <a class="color000-op06" href="https://www.w3schools.com/">w3.css</a></p>
-        </div>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
     </div>
-    
-    <!--Modal Java-->
-    <div class="modal js-modal">
-        <!--<p>Web đang bảo trì nhé các bạn</p>-->
-        <div class="modal-contanier js-modal-contanier">
-            <div class="modal-close js-modal-close">
-                <i class="close fa-solid fa-xmark"></i>
-            </div>
-            <header class="modal-header">
-                <i class="modal-heading-icon fa-solid fa-bag-shopping">
-                    <a>Tickets</a>
-                </i>
-            </header>
-            <div class="modal-body">
-                <label for="tickets-quantity" class="modal-label">
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
 
-                    <i class="fa-solid fa-ticket"></i>
-                    Tickets, $15 per person
-                </label>    
-                <input id="tickets-quantity" type="text" class="modal-input" placeholder="How many?">
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
 
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-
-                <label for="ticket-email" class="modal-label">
-
-                    <i class="fa-solid fa-user"></i>
-                    Send to
-                </label> 
-                <input id="ticket-email" type="text" class="modal-input " placeholder="Enter Email">
-                
-                <button id="buy-tickets">Pay
-                    <i class="fa-solid fa-check"></i>
-                </button>
-            </div> 
-            <footer class="modal-footer">
-                <p class="modal-help">
-                    Need 
-                    <a href="https://ducvan.tk">help?</a>
-                </p>
-            </footer>
-        </div>
-    
-
-    </div> 
-
-
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.modal')
-        const modalContanier = document.querySelector('.js-modal-contanier')
-        const modalClose = document.querySelector('.js-modal-close')
-        const clickSubmit = document.querySelector('.tksForSubmit')
-        var header = document.getElementById('header')
-        var mobileMenu = document.getElementById('mobile-menu-btn')
-        var headerHeight = header.clientHeight;
-        //Đóng mở mobile menu
-        mobileMenu.onclick = function () {
-            var isClosed = header.clientHeight === headerHeight;
-            if (isClosed) {
-                header.style.height = 'auto';
-            }
-            else {
-                header.style.height = null;
-            }
-        }
-        // Tự động đóng khi chọn phần tử trong menu mobile
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-            for (var i = 0; i < menuItems.length; i++) {
-                var menuItem = menuItems[i];
-                menuItem.onclick = function (event) {
-                    var isParentMenu = this.nextElementSibling &&  this.nextElementSibling.classList.contains('subnav');
-                    if (isParentMenu) {
-                        event.preventDefault();
-                    }
-                    else {
-                        header.style.height = null;  
-                    }
-            }
-        }
-        
-
-        //phát nhạc khi ấn
-        var audio = document.getElementById('audio');
-        function playAudio() {
-            audio.autoplay = true;
-            audio.load();
-        }
-
-
-        // Thông báo khi gửi thư thành công
-        function alertTks () {
-            clickSubmit.addEventListener('click', function () {
-                alert('Thank you for your submission')
-            })
-        }    
-        //Hàm hiển thị modal mua vé//
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
-        //Hàm ẩn modal mua vé ( gỡ bỏ class modal)//
-        function hideBuyTickets() {
-            modal.classList.remove('open')
-        }
-        //Lặp qua từng thẻ buton và nghe sự kiện click//
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTickets)
-
-        }
-        //copy 
-        function copySDT() {
-            navigator.clipboard.writeText('+84373871213');
-            alert('Đã sao chép số điện thoại');
-        }   
-        function copyEmail() {
-            navigator.clipboard.writeText('bagiadaohoa@gmail.com')
-            alert('Đã sao chép email');
-        }
-        // custom con chỏ chuột
-        const cursor = document.querySelector('.cursor');
-
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-        })
-
-        document.addEventListener('click', () => {
-            cursor.classList.add("expand");
-
-            setTimeout(() => {
-                cursor.classList.remove("expand");
-            }, 500)
-        })   
-
-
-
-
-
-
-        //Lắng nghe sự kiện click vào nút close// 
-        modalClose.addEventListener('click', hideBuyTickets)
-        modal.addEventListener('click', hideBuyTickets)
-        modalContanier.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-
-    </script>
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
     </div>
-    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
-
 </html>
